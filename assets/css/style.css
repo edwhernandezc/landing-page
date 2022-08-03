@@ -1,15 +1,8 @@
-/**
-* Template Name: Bootslander - v4.8.1
-* Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #444444;
 }
 
@@ -133,12 +126,28 @@ h6 {
   background: rgba(1, 4, 136, 0.9);
 }
 
+.text-red {
+  color:#e3122d !important;
+}
+
+.text-bold {
+  font-weight: 800 !important;
+}
+.gray-color {
+  color: dimgray !important;
+}
+
+.so-big {
+  font-size: 155px;
+  font-weight: 1000 !important;
+}
+
 #header.header-transparent {
   background: #e3122d;
 }
 
 #header.header-scrolled {
-  background: rgba(1, 4, 136, 0.9);
+  background: #e3122d;
   height: 60px;
 }
 
@@ -182,6 +191,11 @@ h6 {
 
 .navbar li {
   position: relative;
+  padding: 10px 0 10px 30px;
+}
+
+.navbar li.border-left{
+  border-left: 2px solid #ffff;
 }
 
 .navbar a,
@@ -189,13 +203,14 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  border-radius: 51rem;
   font-size: 15px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat", sans-serif;
+  color: #ffff;
   white-space: nowrap;
   transition: 0.3s;
+  padding: 0.1rem 1rem ;
 }
 
 .navbar a i,
@@ -422,27 +437,22 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/hero-bg.png") no-repeat;
   position: relative;
   padding: 120px 0 0 0;
 }
 
-#hero:before {
-  content: "";
-  background: rgba(2, 5, 161, 0.91);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+#hero .hero-img img {
+  width: auto;
+  max-height: 485px;
 }
 
 #hero h1 {
-  margin: 0 0 20px 0;
-  font-size: 48px;
-  font-weight: 700;
+  text-align: right;
+  font-size: 50px;
+  font-weight: 500;
   line-height: 56px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
 }
 
 #hero h1 span {
@@ -655,7 +665,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section-title h2::after {
@@ -673,7 +683,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #010483;
 }
 
@@ -1260,7 +1270,7 @@ section {
   font-size: 36px;
   color: #1acc8d;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1369,7 +1379,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
