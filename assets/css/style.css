@@ -16,6 +16,19 @@ a:hover {
   text-decoration: none;
 }
 
+.btn-primary {
+  background: #e3122d !important;
+  color: #ffffff;
+  border: 0;
+}
+
+.btn-secondary {
+  background: #ededed !important;
+  color: #000000;
+  border: 0;
+}
+
+
 h1,
 h2,
 h3,
