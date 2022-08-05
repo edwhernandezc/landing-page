@@ -185,12 +185,15 @@
       delay: 5000,
       disableOnInteraction: false
     },
-    slidesPerView: 'auto',
+    slidesPerView: 4,
     pagination: {
       el: '.swiper-pagination',
-      type: 'bullets',
       clickable: true
-    }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
   /**
