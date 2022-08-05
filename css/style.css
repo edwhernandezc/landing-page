@@ -1170,7 +1170,45 @@ section {
     width: 80%;
   }
 }
+/*-------------------------------------------------------------
+# Sales
+---------------------------------------------------------------*/
+.sales {
+  background-image: url("../img/sales-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.sales .section-title h1 {
+  font-weight: bold;
+}
+
+.sales .section-title p {
+  font-size: 15px;
+  color: #000;
+  font-weight: normal;
+}
+.sales .card-sales {
+  border: 0;
+  background: transparent;
+}
+.sales .card-sales .card-img-overlay {
+  border-radius: 2rem;
+}
+
+.sales .card-sales .card-img-overlay h1 {
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  line-height: 0.9;
+}
+.sales .card-sales .card-img-overlay a {
+  color: white;
+}
+
+.sales .card-sales img {
+  border-radius: 2rem;
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
