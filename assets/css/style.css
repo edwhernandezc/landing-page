@@ -1145,7 +1145,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1acc8d;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .testimonials .testimonial-divider {
   border-top: dashed 1px #e3122d;
@@ -1174,9 +1174,10 @@ section {
 # Sales
 ---------------------------------------------------------------*/
 .sales {
-  background-image: url("../img/sales-bg.png");
+  background-image: url(../img/sales-bg.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  padding: 0;
+  background-position: center;
 }
 
 .sales .section-title h1 {
@@ -1190,7 +1191,8 @@ section {
 }
 .sales .card-sales {
   border: 0;
-  background: transparent;
+  background-size: cover;
+  background: transparent no-repeat center;
 }
 .sales .card-sales .card-img-overlay {
   border-radius: 2rem;
@@ -1202,12 +1204,35 @@ section {
   font-weight: bold;
   line-height: 0.9;
 }
-.sales .card-sales .card-img-overlay a {
+.sales .card-sales .card-img-overlay .card-sales-button {
+  margin-bottom: 15%;
+}
+.sales .card-sales .card-img-overlay .card-sales-button a {
   color: white;
+  font-size: 13px;
+  border-radius: 2rem;
 }
 
 .sales .card-sales img {
   border-radius: 2rem;
+}
+
+.sales .card-sales.card-sales-left {
+  border-radius: 2rem;
+  min-height: 550px;
+  background: url("../img/sales/conciliacion.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.sales .card-sales.card-sales-right {
+  border-radius: 2rem;
+  min-height: 200px;
+  background: url("../img/sales/nomina.jpeg") no-repeat center;
+  background-size: cover;
+}
+.sales .card-sales.card-sales-right.card-sales-right-billing {
+  background: url("../img/sales/facturacion.jpeg") no-repeat center;
+  background-size: cover;
 }
 /*--------------------------------------------------------------
 # Team
