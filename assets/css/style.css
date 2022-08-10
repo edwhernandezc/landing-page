@@ -57,7 +57,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1acc8d;
+  border: 6px solid #e3122d;
   border-top-color: #d2f9eb;
   border-radius: 50%;
   width: 60px;
@@ -84,39 +84,6 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #1acc8d;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #2be4a2;
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1230,7 +1197,7 @@ section {
 
 .sales .card-sales.card-sales-right {
   border-radius: 2rem;
-  min-height: 200px;
+  min-height: 250px;
   background: url("../img/sales/nomina.jpeg") no-repeat center;
   background-size: cover;
 }
@@ -1674,30 +1641,6 @@ section {
   padding: 60px 0 30px 0;
 }
 
-#footer .footer-top .footer-info {
-  margin-bottom: 15px;
-  background: #ffffff;
-  color: #000000;
-  border-top: 4px solid #1acc8d;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-#footer .footer-top .footer-info h3 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
 #footer .footer-top .social-links a {
   font-size: 40px;
   display: inline-block;
@@ -1765,41 +1708,8 @@ section {
   text-underline: #ffffff;
 }
 
-#footer .footer-top .footer-newsletter {
-  padding: 0px 2%;
-}
-
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px 6px 15px;
-  position: relative;
-  border-radius: 50px;
-}
-
-#footer .footer-top .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px;
-  width: calc(100% - 110px);
-}
-
-#footer .footer-top .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #1acc8d;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-}
-
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #149f6e;
+#footer .footer-top .footer-newsletter img {
+  max-height: 170px;
 }
 
 #footer .copyright {
