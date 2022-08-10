@@ -89,10 +89,10 @@
 <section id="buttons">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-12 text-md-center text-lg-end order-1" data-aos="zoom-out" data-aos-delay="300">
+            <div class="col-lg-6 col-md-12 text-md-center text-lg-center order-1" data-aos="zoom-out" data-aos-delay="300">
                 <a href="#" class="btn btn-primary p-2">Abre tu cuenta gratis y vende ya!</a>
             </div>
-            <div class="col-lg-6 col-md-12 text-md-center text-lg-end order-2" data-aos="zoom-out" data-aos-delay="300">
+            <div class="col-lg-6 col-md-12 text-md-center text-lg-center order-2" data-aos="zoom-out" data-aos-delay="300">
                 <a href="#" class="btn btn-secondary px-5">Conoce los planes</a>
             </div>
         </div>
@@ -291,7 +291,22 @@
         </div>
     </section>
     <!-- End About Section -->
-
+    <!-- ======= Payment methods section ==== -->
+    <section id="payment-methods">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="col-4 p-5"><img src="assets/img/payment-methods/tarjetas-credito.png" class="img-fluid"></div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="col-4 p-5"><img src="assets/img/payment-methods/efectivo.png" class="img-fluid"></div>
+            <div class="col-4 p-5"><img src="assets/img/payment-methods/circulo.png" class="img-fluid"></div>
+            <div class="col-4 p-5"><img src="assets/img/payment-methods/tranferencias.png" class="img-fluid"></div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="col-4 p-5"><img src="assets/img/payment-methods/tarjetas.png" class="img-fluid"></div>
+        </div>
+        </div>
+    </section>
+    <!-- === End Medios Pago section ==== -->
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
         <div class="container">
@@ -340,7 +355,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="social-links mt-3">
-                        <img class="img-fluid col-5" src="assets/img/google_play_store.png" />
+                        <img class="img-fluid col-6" src="assets/img/google_play_store.png" />
                         <img class="img-fluid col-5" src="assets/img/app-store.png" />
                         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -350,14 +365,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-newsletter">
-                    <div class="footer-info">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                    </div>
+                <div class="col-lg-3 col-md-6 footer-newsletter text-center">
+                    <img src="assets/img/whatsapp.jpeg" class="img-fluid"/>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
@@ -383,8 +392,7 @@
     </div>
 </footer><!-- End Footer -->
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-whatsapp"></i></a>
+
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->
@@ -396,6 +404,13 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+<script>
+    var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"573123935326","welcomeMessage":"Quisiera información","zIndex":999999,"btnColorScheme":"light"};
+    window.onload = () => {
+        _waEmbed(wa_btnSetting);
+    };
+</script>
 
 </body>
 
