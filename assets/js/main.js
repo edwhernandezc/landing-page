@@ -1,8 +1,4 @@
 /**
-* Template Name: Bootslander - v4.8.1
-* Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 */
 (function() {
   "use strict";
@@ -95,22 +91,6 @@
   }
 
   /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
@@ -198,17 +178,33 @@
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
+        grid: {
+          rows: 7
+        },
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: false,
+        },
       },
       // when window width is >= 480px
       480: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 0,
+        grid: {
+          rows: 4
+        },
+        loop: false,
       },
       // when window width is >= 780px
       780: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
+        grid: {
+          rows: 4
+        },
+        loop: false,
       },
       // when window width is >= 1000px
       1000: {
