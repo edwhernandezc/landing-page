@@ -1224,9 +1224,9 @@ section {
 --------------------------------------------------------------*/
 #payment-methods .center-paymethod {
   height: 500px;
-  background: url("../img/payment-methods/circulo.png") no-repeat;
   display: flex;
   flex-wrap: wrap;
+  background: url("../img/payment-methods/circulo.png") no-repeat center;
   background-size: contain;
   padding: 0 !important;
 }
