@@ -177,16 +177,12 @@
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 0,
         grid: {
-          rows: 7
+          rows: 4
         },
         loop: false,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: false,
-        },
       },
       // when window width is >= 480px
       480: {

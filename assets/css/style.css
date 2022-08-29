@@ -1779,6 +1779,22 @@ section {
     font-size: 40px;
     font-weight: 1000 !important;
   }
+  #buttons div.buttons-container {
+    text-align: center !important;
+  }
+
+  .testimonials-slider .swiper-wrapper {
+    display: inline-block !important;
+  }
+
+  .testimonials-slider .swiper-wrapper .swiper-slide {
+    float: left;
+    min-height: 330px;
+  }
+
+  .testimonials-slider .swiper-wrapper .swiper-slide img{
+    max-height: 140px;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 779px){
@@ -1788,7 +1804,7 @@ section {
   #hero .hero-img img, .about .justify-content-right img {
     display: none;
   }
-  #buttons div {
-    text-align: center;
+  #buttons div.buttons-container {
+    text-align: center !important;
   }
 }
