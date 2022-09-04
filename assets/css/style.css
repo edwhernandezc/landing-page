@@ -1231,7 +1231,29 @@ section {
 
 #payment-methods .center-paymethod .show-top {
   width: 100%;
-  height: 7rem;
+  height: 8rem;
+}
+
+#payment-methods .center-paymethod .show-top:hover, #payment-methods .center-paymethod .show-left:hover,
+#payment-methods .center-paymethod .show-right:hover, #payment-methods .center-paymethod .show-bottom:hover {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+#payment-methods .center-paymethod .show-top:hover {
+  padding-top: 50%;
+}
+#payment-methods .center-paymethod .show-left:hover {
+  padding-top: 20%;
+}
+
+#payment-methods .center-paymethod .show-top h3, #payment-methods .center-paymethod .show-top p {
+  display: none;
+}
+
+#payment-methods .center-paymethod .show-top:hover h3, #payment-methods .center-paymethod .show-top:hover p {
+  display: block;
 }
 
 #payment-methods .center-paymethod .show-left {
@@ -1240,16 +1262,40 @@ section {
   float: left;
 }
 
+#payment-methods .center-paymethod .show-left h3, #payment-methods .center-paymethod .show-left p {
+  display: none;
+}
+
+#payment-methods .center-paymethod .show-left:hover h3, #payment-methods .center-paymethod .show-left:hover p {
+  display: block;
+}
+
 #payment-methods .center-paymethod .show-right {
   width: 50%;
   height: 10rem;
   float: right;
 }
 
+#payment-methods .center-paymethod .show-right h3, #payment-methods .center-paymethod .show-right p {
+  display: none;
+}
+
+#payment-methods .center-paymethod .show-right:hover h3, #payment-methods .center-paymethod .show-right:hover p {
+  display: block;
+}
+
 #payment-methods .center-paymethod .show-bottom {
   width: 100%;
   height: 7rem;
   float: right;
+}
+
+#payment-methods .center-paymethod .show-bottom h3, #payment-methods .center-paymethod .show-bottom p{
+  display: none;
+}
+
+#payment-methods .center-paymethod .show-bottom:hover h3, #payment-methods .center-paymethod .show-bottom:hover p{
+  display: block;
 }
 /*--------------------------------------------------------------
 # Team
@@ -1771,6 +1817,10 @@ section {
   color: #fff;
 }
 
+.sales .card-sales, .sales .card-sales img {
+  min-height: 350px;
+}
+
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
@@ -1797,14 +1847,45 @@ section {
   }
 }
 
-@media (min-width: 480px) and (max-width: 779px){
+@media (min-width: 365px) and (max-width: 779px){
   .testimonials-slider .swiper-wrapper {
     flex-direction: row !important;
+  }
+  #hero {
+    background-position: top;
+    min-height: 400px;
+    padding-top: 8rem;
   }
   #hero .hero-img img, .about .justify-content-right img {
     display: none;
   }
+  #hero h1, #hero .text-red, #hero .so-big, #hero .gray-color {
+    color: white !important;
+    text-align: start !important;
+    font-size: 25px;
+  }
   #buttons div.buttons-container {
     text-align: center !important;
+  }
+  .testimonials .testimonials-slider h1 {
+    font-size: 20px;
+  }
+
+  .testimonials .testimonials-slider p, .section-title p {
+    font-size: 10px !important;
+  }
+
+  .testimonials .testimonial-divider h1, .section-title h1 {
+    font-size: 15px !important;
+  }
+
+  .details h3 {
+    font-weight: 600;
+    font-size: 40px !important;
+  }
+
+  .features .section-title h1 {
+    text-align: center;
+    font-size: 20px !important;
   }
 }
