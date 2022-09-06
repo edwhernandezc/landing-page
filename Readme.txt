@@ -1,1 +1,2 @@
-Thanks for downloading this template!
+Development by Encefalo SAS.
+admin@encefalo.com.co
