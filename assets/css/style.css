@@ -419,6 +419,7 @@ h6 {
 #hero {
   width: 100%;
   background: url("../img/hero-bg.png") no-repeat;
+  background-size: cover;
   position: relative;
   padding: 120px 0 0 0;
 }
@@ -1240,12 +1241,20 @@ section {
   width: 100%;
   text-align: center;
   vertical-align: middle;
+  color: white;
 }
 #payment-methods .center-paymethod .show-top:hover {
   padding-top: 50%;
 }
 #payment-methods .center-paymethod .show-left:hover {
   padding-top: 20%;
+}
+#payment-methods .center-paymethod .show-bottom:hover {
+  margin-top: -4rem;
+}
+
+#payment-methods .center-paymethod .show-right:hover {
+  margin-top: -4rem;
 }
 
 #payment-methods .center-paymethod .show-top h3, #payment-methods .center-paymethod .show-top p {
@@ -1852,7 +1861,9 @@ section {
     flex-direction: row !important;
   }
   #hero {
-    background-position: top;
+    background-position: inherit;
+    background-image: url("../img/hero-mobile.png");
+    background-size: cover;
     min-height: 400px;
     padding-top: 8rem;
   }
